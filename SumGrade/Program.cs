@@ -14,13 +14,11 @@ namespace SumGrade
             a.Add(87);
             a.Add(23);
             gradingStudents(a);
-
-           // Factorial(8);  // factorial of 4 is 4*3*2*1= 24
-             
+            Factorial(8);  // factorial of 4 is 4*3*2*1= 24
 
         }
 
-         public static void  Factorial (int n)
+        public static void Factorial(int n)
         {
             int r = 1;
             if (n >= 1)
@@ -45,19 +43,19 @@ namespace SumGrade
             List<int> res = new List<int>();
             int m5 = 0;
             foreach (var item in grades)
-            {  
+            {
                 if (item < 38)
                 {
-                   // Console.WriteLine(item);
+                    // Console.WriteLine(item);
                     res.Add(item);
                 }
 
-               else if (item % 5 >= 3 && item >=38)
+                else if (item % 5 >= 3 && item >= 38)
                 {
-                    m5 += 5-item % 5 ;
+                    m5 += 5 - item % 5;
                     m5 += item;
-                    
-                  //  Console.WriteLine(item);
+
+                    //  Console.WriteLine(item);
                     res.Add(m5);
                     m5 = 0;
                 }
@@ -66,17 +64,11 @@ namespace SumGrade
                     //Console.WriteLine(item);
                     res.Add(item);
                 }
-
-
-
             }
             foreach (var item in res)
             {
                 Console.WriteLine(item);
             }
         }
-
-
-            
     }
 }
